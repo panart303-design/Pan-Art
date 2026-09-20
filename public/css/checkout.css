@@ -1,0 +1,485 @@
+/* ========================================
+PAN ART - CHECKOUT PAGE
+======================================== */
+
+/* ========================================
+RESET
+======================================== */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f7f7f7;
+color: #111;
+min-height: 100vh;
+}
+
+/* ========================================
+HEADER
+======================================== */
+
+.checkout-header {
+width: 100%;
+background: #000;
+color: #fff;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 20px 7%;
+
+}
+
+.logo a {
+color: #fff;
+text-decoration: none;
+
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 2px;
+
+}
+
+.checkout-header nav {
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.checkout-header nav a {
+color: #fff;
+text-decoration: none;
+
+font-size: 15px;
+
+}
+
+.checkout-header nav a {
+opacity: 0.7;
+}
+
+.checkout-header nav a.active {
+font-weight: 700;
+}
+
+/* ========================================
+MAIN CHECKOUT PAGE
+======================================== */
+
+.checkout-page {
+width: 90%;
+max-width: 1200px;
+
+margin: 0 auto;
+padding: 60px 0 80px;
+
+}
+
+/* ========================================
+PAGE HEADING
+======================================== */
+
+.page-heading {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.page-label {
+font-size: 12px;
+font-weight: 700;
+
+letter-spacing: 2px;
+margin-bottom: 12px;
+
+}
+
+.page-heading h1 {
+font-size: 42px;
+margin-bottom: 12px;
+}
+
+.page-heading p {
+color: #666;
+font-size: 16px;
+}
+
+/* ========================================
+CHECKOUT CONTENT
+======================================== */
+
+.checkout-content {
+display: grid;
+
+grid-template-columns: 1fr 360px;
+
+gap: 40px;
+
+align-items: start;
+
+}
+
+/* ========================================
+ORDER SECTION
+======================================== */
+
+.order-section {
+background: #fff;
+
+border: 1px solid #e5e5e5;
+
+padding: 30px;
+
+border-radius: 8px;
+
+}
+
+.order-section h2 {
+font-size: 22px;
+
+margin-bottom: 25px;
+
+}
+
+/* ========================================
+CHECKOUT ITEMS
+======================================== */
+
+.checkout-items {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.checkout-item {
+display: flex;
+
+align-items: center;
+
+gap: 20px;
+
+padding-bottom: 20px;
+
+border-bottom: 1px solid #e5e5e5;
+
+}
+
+.checkout-item {
+border-bottom: none;
+padding-bottom: 0;
+}
+
+.checkout-item-image {
+width: 100px;
+height: 100px;
+
+object-fit: cover;
+
+border-radius: 6px;
+
+background: #eee;
+
+}
+
+.checkout-item-details {
+flex: 1;
+}
+
+.checkout-item-title {
+font-size: 18px;
+font-weight: 700;
+
+margin-bottom: 7px;
+
+}
+
+.checkout-item-artist {
+color: #666;
+font-size: 14px;
+
+margin-bottom: 8px;
+
+}
+
+.checkout-item-price {
+font-size: 16px;
+font-weight: 700;
+}
+
+/* ========================================
+PAYMENT SUMMARY
+======================================== */
+
+.payment-summary {
+background: #fff;
+
+border: 1px solid #e5e5e5;
+
+border-radius: 8px;
+
+padding: 30px;
+
+position: sticky;
+top: 30px;
+
+}
+
+.payment-summary h2 {
+font-size: 22px;
+
+margin-bottom: 25px;
+
+}
+
+.summary-row {
+display: flex;
+
+justify-content: space-between;
+align-items: center;
+
+padding: 15px 0;
+
+border-bottom: 1px solid #e5e5e5;
+
+font-size: 15px;
+
+}
+
+.summary-row span {
+font-weight: 600;
+}
+
+.summary-row.total-row {
+border-bottom: none;
+
+padding-top: 20px;
+
+}
+
+.total-row span {
+font-size: 18px;
+font-weight: 700;
+}
+
+#checkoutTotal {
+font-size: 22px;
+}
+
+/* ========================================
+PAYMENT BUTTON
+======================================== */
+
+.pay-btn {
+width: 100%;
+
+border: none;
+
+background: #000;
+color: #fff;
+
+padding: 16px;
+
+margin-top: 20px;
+
+border-radius: 5px;
+
+font-size: 15px;
+font-weight: 700;
+
+cursor: pointer;
+
+transition: 0.2s ease;
+
+}
+
+.pay-btn {
+background: #222;
+}
+
+.pay-btn {
+background: #999;
+
+cursor: not-allowed;
+
+}
+
+/* ========================================
+BACK BUTTON
+======================================== */
+
+.back-btn {
+width: 100%;
+
+background: #fff;
+color: #111;
+
+border: 1px solid #ccc;
+
+padding: 14px;
+
+margin-top: 12px;
+
+border-radius: 5px;
+
+font-size: 15px;
+font-weight: 600;
+
+cursor: pointer;
+
+transition: 0.2s ease;
+
+}
+
+.back-btn {
+background: #f1f1f1;
+}
+
+/* ========================================
+EMPTY CHECKOUT
+======================================== */
+
+.empty-checkout {
+background: #fff;
+
+border: 1px solid #e5e5e5;
+
+border-radius: 8px;
+
+text-align: center;
+
+padding: 70px 30px;
+
+}
+
+.empty-checkout h2 {
+font-size: 26px;
+
+margin-bottom: 12px;
+
+}
+
+.empty-checkout p {
+color: #666;
+
+margin-bottom: 25px;
+
+}
+
+.browse-btn {
+display: inline-block;
+
+background: #000;
+color: #fff;
+
+text-decoration: none;
+
+padding: 14px 25px;
+
+border-radius: 5px;
+
+font-size: 14px;
+font-weight: 700;
+
+}
+
+.browse-btn {
+background: #222;
+}
+
+/* ========================================
+HIDDEN
+======================================== */
+
+.hidden {
+display: none !important;
+}
+
+/* ========================================
+MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+.checkout-header {
+    padding: 18px 5%;
+}
+
+
+.checkout-header nav {
+    gap: 15px;
+}
+
+
+.checkout-page {
+    width: 92%;
+
+    padding-top: 40px;
+}
+
+
+.page-heading h1 {
+    font-size: 34px;
+}
+
+
+.checkout-content {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+
+.payment-summary {
+    position: static;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.checkout-header {
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.checkout-header nav {
+    width: 100%;
+
+    justify-content: center;
+}
+
+
+.order-section,
+.payment-summary {
+    padding: 20px;
+}
+
+
+.checkout-item {
+    align-items: flex-start;
+}
+
+
+.checkout-item-image {
+    width: 80px;
+    height: 80px;
+}
+
+
+.checkout-item-title {
+    font-size: 16px;
+}
+
+
+.checkout-item-price {
+    font-size: 14px;
+}
+
+}

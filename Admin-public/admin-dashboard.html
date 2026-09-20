@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Pan Art - Admin Dashboard</title>
+
+<link
+    rel="stylesheet"
+    href="/admin-css/admin-dashboard.css"
+>
+
+</head>
+
+<body>
+
+<!-- ========================================
+     ADMIN HEADER
+========================================= -->
+
+<header class="admin-header">
+
+    <div class="brand">
+        PAN ART
+    </div>
+
+    <div class="header-right">
+
+        <span id="adminName">
+            Admin
+        </span>
+
+        <button
+            type="button"
+            id="logoutBtn"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ========================================
+     MAIN DASHBOARD
+========================================= -->
+
+<main class="dashboard">
+
+    <!-- PAGE HEADING -->
+
+    <section class="dashboard-heading">
+
+        <h1>
+            Admin Dashboard
+        </h1>
+
+        <p>
+            Manage your Pan Art marketplace.
+        </p>
+
+    </section>
+
+
+    <!-- ========================================
+         SUMMARY CARDS
+    ========================================= -->
+
+    <section class="summary-grid">
+
+        <div class="summary-card">
+
+            <div class="card-icon">
+                🎨
+            </div>
+
+            <div class="card-content">
+
+                <span>
+                    Total Artworks
+                </span>
+
+                <strong id="totalArtworks">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <div class="card-icon">
+                🛒
+            </div>
+
+            <div class="card-content">
+
+                <span>
+                    Total Orders
+                </span>
+
+                <strong id="totalOrders">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <div class="card-icon">
+                💰
+            </div>
+
+            <div class="card-content">
+
+                <span>
+                    Total Payments
+                </span>
+
+                <strong id="totalPayments">
+                    ₦0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <div class="card-icon">
+                👥
+            </div>
+
+            <div class="card-content">
+
+                <span>
+                    Customers
+                </span>
+
+                <strong id="totalCustomers">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         QUICK ACTIONS
+    ========================================= -->
+
+    <section class="actions-section">
+
+        <div class="section-title">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+            <p>
+                Quickly manage your marketplace.
+            </p>
+
+        </div>
+
+
+        <div class="actions-grid">
+
+            <button
+                type="button"
+                class="action-card"
+                id="uploadArtworkBtn"
+            >
+
+                <span class="action-icon">
+                    ⬆️
+                </span>
+
+                <span class="action-title">
+                    Upload Artwork
+                </span>
+
+                <span class="action-description">
+                    Add a new artwork to Pan Art.
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="action-card"
+                id="viewArtworksBtn"
+            >
+
+                <span class="action-icon">
+                    🎨
+                </span>
+
+                <span class="action-title">
+                    Manage Artworks
+                </span>
+
+                <span class="action-description">
+                    Manage artwork listings.
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="action-card"
+                id="viewOrdersBtn"
+            >
+
+                <span class="action-icon">
+                    🛒
+                </span>
+
+                <span class="action-title">
+                    Orders
+                </span>
+
+                <span class="action-description">
+                    View customer orders.
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="action-card"
+                id="viewPaymentsBtn"
+            >
+
+                <span class="action-icon">
+                    💳
+                </span>
+
+                <span class="action-title">
+                    Payments
+                </span>
+
+                <span class="action-description">
+                    View customer payments.
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         RECENT PAYMENTS
+    ========================================= -->
+
+    <section class="payments-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2>
+                    Recent Payments
+                </h2>
+
+                <p>
+                    Latest customer orders and payment activity.
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                id="viewAllPaymentsBtn"
+            >
+                View All
+            </button>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Customer
+                        </th>
+
+                        <th>
+                            Artwork
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="paymentsTableBody">
+
+                    <tr>
+
+                        <td
+                            colspan="5"
+                            class="empty-state"
+                        >
+                            No orders or payments yet.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="/admin-Js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

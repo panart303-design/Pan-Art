@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Pan Art - Upload Artwork</title>
+
+<link
+    rel="stylesheet"
+    href="/admin-css/admin-upload.css"
+>
+
+
+</head>
+
+<body>
+
+
+<!-- ============================= -->
+<!-- ADMIN HEADER -->
+<!-- ============================= -->
+
+<header class="admin-header">
+
+    <div class="admin-logo">
+        PAN ART
+    </div>
+
+    <div class="admin-header-right">
+
+        <span class="admin-label">
+            Admin Panel
+        </span>
+
+        <button
+            type="button"
+            id="logoutBtn"
+            class="logout-btn"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ============================= -->
+<!-- MAIN CONTENT -->
+<!-- ============================= -->
+
+<main class="admin-main">
+
+
+    <div class="page-heading">
+
+        <h1>
+            Upload Artwork
+        </h1>
+
+        <p>
+            Add a new artwork to the Pan Art marketplace.
+        </p>
+
+    </div>
+
+
+
+    <!-- ============================= -->
+    <!-- UPLOAD FORM -->
+    <!-- ============================= -->
+
+    <section class="upload-card">
+
+
+        <form
+            id="artworkUploadForm"
+            enctype="multipart/form-data"
+        >
+
+
+            <!-- ARTWORK IMAGE -->
+
+            <div class="form-group">
+
+                <label for="artworkImage">
+                    Artwork Image
+                </label>
+
+                <input
+                    type="file"
+                    id="artworkImage"
+                    name="artworkImage"
+                    accept="image/jpeg,image/jpg,image/png,image/webp"
+                    required
+                >
+
+                <small>
+                    JPG, JPEG, PNG or WEBP. Maximum size: 5MB.
+                </small>
+
+            </div>
+
+
+
+            <!-- IMAGE PREVIEW -->
+
+            <div
+                id="imagePreviewContainer"
+                class="image-preview-container hidden"
+            >
+
+                <img
+                    id="imagePreview"
+                    src=""
+                    alt="Artwork preview"
+                >
+
+            </div>
+
+
+
+            <!-- ARTWORK TITLE -->
+
+            <div class="form-group">
+
+                <label for="title">
+                    Artwork Title
+                </label>
+
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    placeholder="Enter artwork title"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- ARTIST -->
+
+            <div class="form-group">
+
+                <label for="artist">
+                    Artist
+                </label>
+
+                <input
+                    type="text"
+                    id="artist"
+                    name="artist"
+                    placeholder="Enter artist name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- CATEGORY -->
+
+            <div class="form-group">
+
+                <label for="category">
+                    Category
+                </label>
+
+                <select
+                    id="category"
+                    name="category"
+                    required
+                >
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option value="painting">
+                        Painting
+                    </option>
+
+                    <option value="drawing">
+                        Drawing
+                    </option>
+
+                    <option value="portrait">
+                        Portrait
+                    </option>
+
+                    <option value="abstract">
+                        Abstract
+                    </option>
+
+                    <option value="photography">
+                        Photography
+                    </option>
+
+                    <option value="sculpture">
+                        Sculpture
+                    </option>
+
+                    <option value="digital-art">
+                        Digital Art
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- PRICE -->
+
+            <div class="form-group">
+
+                <label for="price">
+                    Price (₦)
+                </label>
+
+                <input
+                    type="number"
+                    id="price"
+                    name="price"
+                    placeholder="Enter artwork price"
+                    min="1"
+                    step="1"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="message"
+                class="message"
+            ></div>
+
+
+
+            <!-- UPLOAD BUTTON -->
+
+            <button
+                type="submit"
+                id="uploadBtn"
+                class="upload-btn"
+            >
+                Upload Artwork
+            </button>
+
+
+        </form>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ADMIN JAVASCRIPT -->
+
+<script src="/admin-js/admin-upload.js"></script>
+
+</body>
+
+</html>
