@@ -1,5 +1,3 @@
-Clean public/js/artwork.js
-
 /*
 PAN ART - ARTWORK PAGE JAVASCRIPT
 */

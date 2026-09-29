@@ -1,5 +1,3 @@
-routes/artworkRoutes.js
-
 const express = require("express");
 
 const requireLogin = require("../middleware/authMiddleware");

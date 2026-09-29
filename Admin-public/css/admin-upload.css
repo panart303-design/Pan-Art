@@ -1,10 +1,8 @@
-Corrected admin-upload.css
-
 /* ======================================================
 PAN ART - ADMIN UPLOAD PAGE
 ====================================================== */
 
-{
+*{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
