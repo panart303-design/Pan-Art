@@ -1,9 +1,10 @@
-<<<<<<< HEAD
+Corrected admin-upload.css
+
 /* ======================================================
 PAN ART - ADMIN UPLOAD PAGE
 ====================================================== */
 
-*{
+{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -16,9 +17,9 @@ color: #111;
 min-height: 100vh;
 }
 
-/* ============================= /
-/ ADMIN HEADER /
-/ ============================= */
+/* =============================
+ADMIN HEADER
+============================= */
 
 .admin-header {
 width: 100%;
@@ -31,7 +32,6 @@ align-items: center;
 justify-content: space-between;
 
 padding: 0 40px;
-
 }
 
 .admin-logo {
@@ -51,9 +51,9 @@ font-size: 14px;
 color: #ddd;
 }
 
-/* ============================= /
-/ LOGOUT BUTTON /
-/ ============================= */
+/* =============================
+LOGOUT BUTTON
+============================= */
 
 .logout-btn {
 border: 1px solid #fff;
@@ -65,10 +65,10 @@ padding: 9px 18px;
 border-radius: 5px;
 
 font-size: 14px;
+
 cursor: pointer;
 
 transition: 0.2s ease;
-
 }
 
 .logout-btn {
@@ -76,9 +76,9 @@ background: #fff;
 color: #000;
 }
 
-/* ============================= /
-/ MAIN CONTENT /
-/ ============================= */
+/* =============================
+MAIN CONTENT
+============================= */
 
 .admin-main {
 width: 100%;
@@ -87,12 +87,11 @@ max-width: 900px;
 margin: 0 auto;
 
 padding: 50px 20px 70px;
-
 }
 
-/* ============================= /
-/ PAGE HEADING /
-/ ============================= */
+/* =============================
+PAGE HEADING
+============================= */
 
 .page-heading {
 margin-bottom: 30px;
@@ -108,9 +107,9 @@ color: #666;
 font-size: 15px;
 }
 
-/* ============================= /
-/ UPLOAD CARD /
-/ ============================= */
+/* =============================
+UPLOAD CARD
+============================= */
 
 .upload-card {
 width: 100%;
@@ -123,13 +122,14 @@ border-radius: 10px;
 
 padding: 35px;
 
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-
+box-shadow:
+0 4px 15px
+rgba(0, 0, 0, 0.05);
 }
 
-/* ============================= /
-/ FORM GROUP /
-/ ============================= */
+/* =============================
+FORM GROUP
+============================= */
 
 .form-group {
 margin-bottom: 22px;
@@ -141,8 +141,8 @@ display: block;
 margin-bottom: 8px;
 
 font-size: 14px;
-font-weight: 600;
 
+font-weight: 600;
 }
 
 .form-group input,
@@ -165,8 +165,8 @@ font-size: 15px;
 
 outline: none;
 
-transition: border-color 0.2s ease;
-
+transition:
+border-color 0.2s ease;
 }
 
 .form-group input,
@@ -182,12 +182,11 @@ margin-top: 7px;
 color: #777;
 
 font-size: 12px;
-
 }
 
-/* ============================= /
-/ FILE INPUT /
-/ ============================= */
+/* =============================
+FILE INPUT
+============================= */
 
 .form-group input[type="file"] {
 height: auto;
@@ -197,12 +196,11 @@ padding: 12px;
 cursor: pointer;
 
 background: #fafafa;
-
 }
 
-/* ============================= /
-/ IMAGE PREVIEW /
-/ ============================= */
+/* =============================
+IMAGE PREVIEW
+============================= */
 
 .image-preview-container {
 width: 100%;
@@ -218,7 +216,6 @@ border-radius: 8px;
 background: #fafafa;
 
 text-align: center;
-
 }
 
 .image-preview-container img {
@@ -231,16 +228,15 @@ max-height: 400px;
 object-fit: contain;
 
 border-radius: 5px;
-
 }
 
 .hidden {
 display: none;
 }
 
-/* ============================= /
-/ MESSAGE /
-/ ============================= */
+/* =============================
+MESSAGE
+============================= */
 
 .message {
 min-height: 20px;
@@ -248,7 +244,6 @@ min-height: 20px;
 margin-bottom: 15px;
 
 font-size: 14px;
-
 }
 
 .message.success {
@@ -259,9 +254,9 @@ color: #16803c;
 color: #c62828;
 }
 
-/* ============================= /
-/ UPLOAD BUTTON /
-/ ============================= */
+/* =============================
+UPLOAD BUTTON
+============================= */
 
 .upload-btn {
 width: 100%;
@@ -283,7 +278,6 @@ font-weight: 600;
 cursor: pointer;
 
 transition: 0.2s ease;
-
 }
 
 .upload-btn {
@@ -294,417 +288,57 @@ background: #222;
 opacity: 0.6;
 
 cursor: not-allowed;
-
 }
 
-/* ============================= /
-/ RESPONSIVE /
-/ ============================= */
+/* =============================
+RESPONSIVE
+============================= */
 
 @media (max-width: 700px) {
-
 .admin-header {
-    padding: 0 20px;
+padding: 0 20px;
 }
 
 .admin-logo {
-    font-size: 20px;
+font-size: 20px;
 }
 
 .admin-label {
-    display: none;
-}
-
-.admin-main {
-    padding: 35px 15px 50px;
-}
-
-.page-heading h1 {
-    font-size: 26px;
-}
-
-.upload-card {
-    padding: 25px 20px;
-}
-
-}
-
-@media (max-width: 450px) {
-
-.admin-header {
-    min-height: 60px;
-}
-
-.admin-logo {
-    font-size: 18px;
-}
-
-.logout-btn {
-    padding: 8px 13px;
-    font-size: 13px;
-}
-
-.upload-card {
-    padding: 20px 15px;
-}
-
-.page-heading h1 {
-    font-size: 23px;
-}
-
-=======
-/* ======================================================
-PAN ART - ADMIN UPLOAD PAGE
-====================================================== */
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: Arial, Helvetica, sans-serif;
-background: #f5f5f5;
-color: #111;
-min-height: 100vh;
-}
-
-/* ============================= /
-/ ADMIN HEADER /
-/ ============================= */
-
-.admin-header {
-width: 100%;
-min-height: 70px;
-background: #000;
-color: #fff;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-padding: 0 40px;
-
-}
-
-.admin-logo {
-font-size: 24px;
-font-weight: 700;
-letter-spacing: 2px;
-}
-
-.admin-header-right {
-display: flex;
-align-items: center;
-gap: 20px;
-}
-
-.admin-label {
-font-size: 14px;
-color: #ddd;
-}
-
-/* ============================= /
-/ LOGOUT BUTTON /
-/ ============================= */
-
-.logout-btn {
-border: 1px solid #fff;
-background: transparent;
-color: #fff;
-
-padding: 9px 18px;
-
-border-radius: 5px;
-
-font-size: 14px;
-cursor: pointer;
-
-transition: 0.2s ease;
-
-}
-
-.logout-btn {
-background: #fff;
-color: #000;
-}
-
-/* ============================= /
-/ MAIN CONTENT /
-/ ============================= */
-
-.admin-main {
-width: 100%;
-max-width: 900px;
-
-margin: 0 auto;
-
-padding: 50px 20px 70px;
-
-}
-
-/* ============================= /
-/ PAGE HEADING /
-/ ============================= */
-
-.page-heading {
-margin-bottom: 30px;
-}
-
-.page-heading h1 {
-font-size: 32px;
-margin-bottom: 8px;
-}
-
-.page-heading p {
-color: #666;
-font-size: 15px;
-}
-
-/* ============================= /
-/ UPLOAD CARD /
-/ ============================= */
-
-.upload-card {
-width: 100%;
-
-background: #fff;
-
-border: 1px solid #ddd;
-
-border-radius: 10px;
-
-padding: 35px;
-
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-
-}
-
-/* ============================= /
-/ FORM GROUP /
-/ ============================= */
-
-.form-group {
-margin-bottom: 22px;
-}
-
-.form-group label {
-display: block;
-
-margin-bottom: 8px;
-
-font-size: 14px;
-font-weight: 600;
-
-}
-
-.form-group input,
-.form-group select {
-width: 100%;
-
-height: 48px;
-
-padding: 0 14px;
-
-border: 1px solid #ccc;
-
-border-radius: 6px;
-
-background: #fff;
-
-color: #111;
-
-font-size: 15px;
-
-outline: none;
-
-transition: border-color 0.2s ease;
-
-}
-
-.form-group input,
-.form-group select {
-border-color: #000;
-}
-
-.form-group small {
-display: block;
-
-margin-top: 7px;
-
-color: #777;
-
-font-size: 12px;
-
-}
-
-/* ============================= /
-/ FILE INPUT /
-/ ============================= */
-
-.form-group input[type="file"] {
-height: auto;
-
-padding: 12px;
-
-cursor: pointer;
-
-background: #fafafa;
-
-}
-
-/* ============================= /
-/ IMAGE PREVIEW /
-/ ============================= */
-
-.image-preview-container {
-width: 100%;
-
-margin-bottom: 25px;
-
-padding: 15px;
-
-border: 1px solid #ddd;
-
-border-radius: 8px;
-
-background: #fafafa;
-
-text-align: center;
-
-}
-
-.image-preview-container img {
-display: block;
-
-width: 100%;
-
-max-height: 400px;
-
-object-fit: contain;
-
-border-radius: 5px;
-
-}
-
-.hidden {
 display: none;
 }
 
-/* ============================= /
-/ MESSAGE /
-/ ============================= */
-
-.message {
-min-height: 20px;
-
-margin-bottom: 15px;
-
-font-size: 14px;
-
-}
-
-.message.success {
-color: #16803c;
-}
-
-.message.error {
-color: #c62828;
-}
-
-/* ============================= /
-/ UPLOAD BUTTON /
-/ ============================= */
-
-.upload-btn {
-width: 100%;
-
-height: 50px;
-
-border: none;
-
-border-radius: 6px;
-
-background: #000;
-
-color: #fff;
-
-font-size: 15px;
-
-font-weight: 600;
-
-cursor: pointer;
-
-transition: 0.2s ease;
-
-}
-
-.upload-btn {
-background: #222;
-}
-
-.upload-btn {
-opacity: 0.6;
-
-cursor: not-allowed;
-
-}
-
-/* ============================= /
-/ RESPONSIVE /
-/ ============================= */
-
-@media (max-width: 700px) {
-
-.admin-header {
-    padding: 0 20px;
-}
-
-.admin-logo {
-    font-size: 20px;
-}
-
-.admin-label {
-    display: none;
-}
-
 .admin-main {
-    padding: 35px 15px 50px;
+padding: 35px 15px 50px;
 }
 
 .page-heading h1 {
-    font-size: 26px;
+font-size: 26px;
 }
 
 .upload-card {
-    padding: 25px 20px;
+padding: 25px 20px;
 }
-
 }
 
 @media (max-width: 450px) {
-
 .admin-header {
-    min-height: 60px;
+min-height: 60px;
 }
 
 .admin-logo {
-    font-size: 18px;
+font-size: 18px;
 }
 
 .logout-btn {
-    padding: 8px 13px;
-    font-size: 13px;
+padding: 8px 13px;
+font-size: 13px;
 }
 
 .upload-card {
-    padding: 20px 15px;
+padding: 20px 15px;
 }
 
 .page-heading h1 {
-    font-size: 23px;
+font-size: 23px;
 }
-
->>>>>>> 55e619a2b3c688d863890bd1300bb1649e96c925
 }

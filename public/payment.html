@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+public/payment.html
+
 <!DOCTYPE html>
 
 <html lang="en">
 
-<head>
-
-<meta charset="UTF-8">
+<head> <meta charset="UTF-8">
 
 <meta
     name="viewport"
@@ -103,9 +102,7 @@
             </h2>
 
             <div id="paymentItems">
-
                 <!-- Payment items are loaded by payment.js -->
-
             </div>
 
         </div>
@@ -120,7 +117,6 @@
             <h2>
                 Payment Summary
             </h2>
-
 
             <div class="summary-row">
 
@@ -209,216 +205,4 @@
 
 </body>
 
-=======
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<title>Payment - Pan Art</title>
-
-<link
-    rel="stylesheet"
-    href="css/payment.css"
->
-
-</head>
-
-<body>
-
-<!-- ========================================
-     HEADER
-========================================= -->
-
-<header class="site-header">
-
-    <div class="logo">
-        <a href="artwork.html">
-            PAN ART
-        </a>
-    </div>
-
-    <nav class="main-nav">
-
-        <a href="artwork.html">
-            Artwork
-        </a>
-
-        <a href="cart.html">
-            Cart
-        </a>
-
-        <a
-            href="checkout.html"
-            class="active"
-        >
-            Checkout
-        </a>
-
-        <button
-            type="button"
-            id="logoutBtn"
-        >
-            Logout
-        </button>
-
-    </nav>
-
-</header>
-
-
-<!-- ========================================
-     MAIN PAYMENT PAGE
-========================================= -->
-
-<main class="payment-page">
-
-    <section class="page-heading">
-
-        <h1>
-            Make Payment
-        </h1>
-
-        <p>
-            Review your order and proceed with payment.
-        </p>
-
-    </section>
-
-
-    <!-- ========================================
-         PAYMENT CONTENT
-    ========================================= -->
-
-    <section
-        class="payment-content"
-        id="paymentContent"
-    >
-
-        <!-- ====================================
-             ORDER ITEMS
-        ===================================== -->
-
-        <div class="payment-order">
-
-            <h2>
-                Your Order
-            </h2>
-
-            <div id="paymentItems">
-
-                <!-- Payment items are loaded by payment.js -->
-
-            </div>
-
-        </div>
-
-
-        <!-- ====================================
-             PAYMENT SUMMARY
-        ===================================== -->
-
-        <aside class="payment-summary">
-
-            <h2>
-                Payment Summary
-            </h2>
-
-
-            <div class="summary-row">
-
-                <span>
-                    Items
-                </span>
-
-                <strong id="paymentItemCount">
-                    0
-                </strong>
-
-            </div>
-
-
-            <div class="summary-row total-row">
-
-                <span>
-                    Total
-                </span>
-
-                <strong id="paymentTotal">
-                    ₦0
-                </strong>
-
-            </div>
-
-
-            <button
-                type="button"
-                id="paymentBtn"
-                class="payment-btn"
-            >
-                Pay Now
-            </button>
-
-
-            <button
-                type="button"
-                id="backToCheckoutBtn"
-                class="back-btn"
-            >
-                Back to Checkout
-            </button>
-
-
-            <p class="secure-message">
-                🔒 Your payment will be processed securely.
-            </p>
-
-        </aside>
-
-    </section>
-
-
-    <!-- ========================================
-         EMPTY PAYMENT
-    ========================================= -->
-
-    <section
-        id="emptyPayment"
-        class="empty-payment hidden"
-    >
-
-        <h2>
-            No Items to Pay For
-        </h2>
-
-        <p>
-            Your cart is empty. Add an artwork before proceeding to payment.
-        </p>
-
-        <a href="artwork.html">
-            Browse Artwork
-        </a>
-
-    </section>
-
-</main>
-
-
-<!-- ========================================
-     JAVASCRIPT
-========================================= -->
-
-<script src="js/payment.js"></script>
-
-</body>
-
->>>>>>> 55e619a2b3c688d863890bd1300bb1649e96c925
 </html>

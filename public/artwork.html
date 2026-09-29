@@ -1,548 +1,249 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title>Pan Art | Artworks</title>
 
-    <title>Pan Art | Artworks</title>
+<link
+    rel="stylesheet"
+    href="css/artwork.css"
+>
 
-    <link
-        rel="stylesheet"
-        href="css/artwork.css"
-    >
 </head>
 
 <body>
 
-    <!-- ========================================
-         HEADER
-    ========================================= -->
+<!-- ========================================
+     HEADER
+========================================= -->
+<header class="site-header">
+    <div class="header-container">
 
-    <header class="site-header">
+        <a
+            href="artwork.html"
+            class="logo"
+        >
+            PAN ART
+        </a>
 
-        <div class="header-container">
+        <nav class="main-nav">
 
-            <a
-                href="artwork.html"
-                class="logo"
-            >
-                PAN ART
+            <a href="artwork.html">
+                Artworks
             </a>
 
-
-            <nav class="main-nav">
-
-                <a href="artwork.html">
-                    Artworks
-                </a>
-
-                <a href="cart.html">
-                    Cart
-                    <span
-                        id="cartCount"
-                        class="cart-count"
-                    >
-                        0
-                    </span>
-                </a>
-
-                <button
-                    id="logoutBtn"
-                    type="button"
-                    class="logout-btn"
+            <a href="cart.html">
+                Cart
+                <span
+                    id="cartCount"
+                    class="cart-count"
                 >
-                    Logout
-                </button>
+                    0
+                </span>
+            </a>
 
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <!-- ========================================
-         MAIN
-    ========================================= -->
-
-    <main>
-
-
-        <!-- ====================================
-             HERO
-        ===================================== -->
-
-        <section class="artwork-hero">
-
-            <div class="hero-content">
-
-                <p class="hero-label">
-                    PAN ART COLLECTION
-                </p>
-
-                <h1>
-                    Discover Art That Speaks to You
-                </h1>
-
-                <p>
-                    Explore original artworks created by
-                    talented artists and find a piece that
-                    belongs in your space.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================
-             ARTWORK SECTION
-        ===================================== -->
-
-        <section class="artwork-section">
-
-            <div class="section-header">
-
-                <div>
-
-                    <p class="section-label">
-                        OUR COLLECTION
-                    </p>
-
-                    <h2>
-                        Featured Artworks
-                    </h2>
-
-                </div>
-
-
-                <div class="artwork-tools">
-
-                    <label
-                        for="categoryFilter"
-                        class="sr-only"
-                    >
-                        Filter artworks
-                    </label>
-
-                    <select
-                        id="categoryFilter"
-                    >
-
-                        <option value="all">
-                            All Artworks
-                        </option>
-
-                        <option value="painting">
-                            Paintings
-                        </option>
-
-                        <option value="drawing">
-                            Drawings
-                        </option>
-
-                        <option value="portrait">
-                            Portraits
-                        </option>
-
-                        <option value="abstract">
-                            Abstract
-                        </option>
-
-                        <option value="photography">
-                            Photography
-                        </option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================
-                 ARTWORK GRID
-            ================================== -->
-
-            <div
-                id="artworkGrid"
-                class="artwork-grid"
+            <button
+                id="logoutBtn"
+                type="button"
+                class="logout-btn"
             >
+                Logout
+            </button>
 
-                <!--
-                    Artworks will be loaded here
-                    from the database.
-                -->
-
-                <div
-                    id="loadingMessage"
-                    class="loading-message"
-                >
-                    Loading artworks...
-                </div>
-
-            </div>
+        </nav>
+    </div>
+</header>
 
 
-            <!-- =================================
-                 EMPTY MESSAGE
-            ================================== -->
+<!-- ========================================
+     MAIN
+========================================= -->
+<main>
 
-            <div
-                id="emptyMessage"
-                class="empty-message hidden"
-            >
+    <!-- ====================================
+         HERO
+    ===================================== -->
+    <section class="artwork-hero">
 
-                <h3>
-                    No artworks found
-                </h3>
+        <div class="hero-content">
 
-                <p>
-                    We couldn't find any artworks
-                    matching your selection.
-                </p>
+            <p class="hero-label">
+                PAN ART COLLECTION
+            </p>
 
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ========================================
-         FOOTER
-    ========================================= -->
-
-    <footer class="site-footer">
-
-        <div class="footer-container">
-
-            <div class="footer-brand">
-
-                <h3>
-                    PAN ART
-                </h3>
-
-                <p>
-                    Connecting people with beautiful
-                    artwork and talented artists.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="artwork.html">
-                    Artworks
-                </a>
-
-                <a href="cart.html">
-                    Cart
-                </a>
-
-                <a href="index.html">
-                    Home
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
+            <h1>
+                Discover Art That Speaks to You
+            </h1>
 
             <p>
-                &copy; 2026 Pan Art. All rights reserved.
+                Explore original artworks created by
+                talented artists and find a piece that
+                belongs in your space.
             </p>
 
         </div>
 
-    </footer>
+    </section>
 
 
-    <script
-        src="js/artwork.js"
-    ></script>
+    <!-- ====================================
+         ARTWORK SECTION
+    ===================================== -->
+    <section class="artwork-section">
 
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+        <div class="section-header">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+            <div>
 
-    <title>Pan Art | Artworks</title>
+                <p class="section-label">
+                    OUR COLLECTION
+                </p>
 
-    <link
-        rel="stylesheet"
-        href="css/artwork.css"
-    >
-</head>
+                <h2>
+                    Featured Artworks
+                </h2>
 
-<body>
-
-    <!-- ========================================
-         HEADER
-    ========================================= -->
-
-    <header class="site-header">
-
-        <div class="header-container">
-
-            <a
-                href="artwork.html"
-                class="logo"
-            >
-                PAN ART
-            </a>
+            </div>
 
 
-            <nav class="main-nav">
+            <div class="artwork-tools">
 
-                <a href="artwork.html">
-                    Artworks
-                </a>
-
-                <a href="cart.html">
-                    Cart
-                    <span
-                        id="cartCount"
-                        class="cart-count"
-                    >
-                        0
-                    </span>
-                </a>
-
-                <button
-                    id="logoutBtn"
-                    type="button"
-                    class="logout-btn"
+                <label
+                    for="categoryFilter"
+                    class="sr-only"
                 >
-                    Logout
-                </button>
+                    Filter artworks
+                </label>
 
-            </nav>
+                <select id="categoryFilter">
 
-        </div>
+                    <option value="all">
+                        All Artworks
+                    </option>
 
-    </header>
+                    <option value="painting">
+                        Paintings
+                    </option>
 
+                    <option value="drawing">
+                        Drawings
+                    </option>
 
-    <!-- ========================================
-         MAIN
-    ========================================= -->
+                    <option value="portrait">
+                        Portraits
+                    </option>
 
-    <main>
+                    <option value="abstract">
+                        Abstract
+                    </option>
 
+                    <option value="photography">
+                        Photography
+                    </option>
 
-        <!-- ====================================
-             HERO
-        ===================================== -->
-
-        <section class="artwork-hero">
-
-            <div class="hero-content">
-
-                <p class="hero-label">
-                    PAN ART COLLECTION
-                </p>
-
-                <h1>
-                    Discover Art That Speaks to You
-                </h1>
-
-                <p>
-                    Explore original artworks created by
-                    talented artists and find a piece that
-                    belongs in your space.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================
-             ARTWORK SECTION
-        ===================================== -->
-
-        <section class="artwork-section">
-
-            <div class="section-header">
-
-                <div>
-
-                    <p class="section-label">
-                        OUR COLLECTION
-                    </p>
-
-                    <h2>
-                        Featured Artworks
-                    </h2>
-
-                </div>
-
-
-                <div class="artwork-tools">
-
-                    <label
-                        for="categoryFilter"
-                        class="sr-only"
-                    >
-                        Filter artworks
-                    </label>
-
-                    <select
-                        id="categoryFilter"
-                    >
-
-                        <option value="all">
-                            All Artworks
-                        </option>
-
-                        <option value="painting">
-                            Paintings
-                        </option>
-
-                        <option value="drawing">
-                            Drawings
-                        </option>
-
-                        <option value="portrait">
-                            Portraits
-                        </option>
-
-                        <option value="abstract">
-                            Abstract
-                        </option>
-
-                        <option value="photography">
-                            Photography
-                        </option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================
-                 ARTWORK GRID
-            ================================== -->
-
-            <div
-                id="artworkGrid"
-                class="artwork-grid"
-            >
-
-                <!--
-                    Artworks will be loaded here
-                    from the database.
-                -->
-
-                <div
-                    id="loadingMessage"
-                    class="loading-message"
-                >
-                    Loading artworks...
-                </div>
-
-            </div>
-
-
-            <!-- =================================
-                 EMPTY MESSAGE
-            ================================== -->
-
-            <div
-                id="emptyMessage"
-                class="empty-message hidden"
-            >
-
-                <h3>
-                    No artworks found
-                </h3>
-
-                <p>
-                    We couldn't find any artworks
-                    matching your selection.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ========================================
-         FOOTER
-    ========================================= -->
-
-    <footer class="site-footer">
-
-        <div class="footer-container">
-
-            <div class="footer-brand">
-
-                <h3>
-                    PAN ART
-                </h3>
-
-                <p>
-                    Connecting people with beautiful
-                    artwork and talented artists.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="artwork.html">
-                    Artworks
-                </a>
-
-                <a href="cart.html">
-                    Cart
-                </a>
-
-                <a href="index.html">
-                    Home
-                </a>
+                </select>
 
             </div>
 
         </div>
 
 
-        <div class="footer-bottom">
+        <!-- =================================
+             ARTWORK GRID
+        ================================== -->
+        <div
+            id="artworkGrid"
+            class="artwork-grid"
+        >
+
+            <!--
+                Artworks will be loaded here
+                from the database.
+            -->
+
+            <div
+                id="loadingMessage"
+                class="loading-message"
+            >
+                Loading artworks...
+            </div>
+
+        </div>
+
+
+        <!-- =================================
+             EMPTY MESSAGE
+        ================================== -->
+        <div
+            id="emptyMessage"
+            class="empty-message hidden"
+        >
+
+            <h3>
+                No artworks found
+            </h3>
 
             <p>
-                &copy; 2026 Pan Art. All rights reserved.
+                We couldn't find any artworks
+                matching your selection.
             </p>
 
         </div>
 
-    </footer>
+    </section>
+
+</main>
 
 
-    <script
-        src="js/artwork.js"
-    ></script>
+<!-- ========================================
+     FOOTER
+========================================= -->
+<footer class="site-footer">
 
-</body>
->>>>>>> 55e619a2b3c688d863890bd1300bb1649e96c925
-</html>
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>
+                PAN ART
+            </h3>
+
+            <p>
+                Connecting people with beautiful
+                artwork and talented artists.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="artwork.html">
+                Artworks
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Pan Art. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/artwork.js"></script>
+
+</body> </html>

@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 /* ========================================
 RESET
 ======================================== */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  }
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 
 /* ========================================
 BODY
@@ -30,14 +29,11 @@ height: 70px;
 background: #111;
 color: #fff;
 
-
 display: flex;
 align-items: center;
 justify-content: space-between;
 
 padding: 0 40px;
-
-
 }
 
 .brand {
@@ -62,7 +58,6 @@ border: 1px solid #555;
 background: transparent;
 color: #fff;
 
-
 padding: 9px 16px;
 
 border-radius: 6px;
@@ -70,10 +65,9 @@ border-radius: 6px;
 cursor: pointer;
 
 font-size: 14px;
-
 }
 
-#logoutBtn:hover {
+#logoutBtn {
 background: #fff;
 color: #111;
 }
@@ -89,8 +83,6 @@ max-width: 1400px;
 margin: 0 auto;
 
 padding: 40px;
-
-
 }
 
 /* ========================================
@@ -118,20 +110,16 @@ SUMMARY CARDS
 .summary-grid {
 display: grid;
 
-
 grid-template-columns:
-    repeat(4, 1fr);
+repeat(4, 1fr);
 
 gap: 20px;
 
 margin-bottom: 40px;
-
-
 }
 
 .summary-card {
 background: #fff;
-
 
 border: 1px solid #e5e5e5;
 
@@ -145,16 +133,13 @@ align-items: center;
 gap: 18px;
 
 box-shadow:
-    0 3px 12px
-    rgba(0, 0, 0, 0.04);
-
-
+0 3px 12px
+rgba(0, 0, 0, 0.04);
 }
 
 .card-icon {
 width: 55px;
 height: 55px;
-
 
 border-radius: 10px;
 
@@ -167,18 +152,13 @@ justify-content: center;
 font-size: 25px;
 
 flex-shrink: 0;
-
-
 }
 
 .card-content {
 display: flex;
 flex-direction: column;
 
-
 gap: 6px;
-
-
 }
 
 .card-content span {
@@ -220,18 +200,14 @@ margin-bottom: 40px;
 .actions-grid {
 display: grid;
 
-
 grid-template-columns:
-    repeat(4, 1fr);
+repeat(4, 1fr);
 
 gap: 20px;
-
-
 }
 
 .action-card {
 border: 1px solid #e3e3e3;
-
 
 background: #fff;
 
@@ -244,27 +220,22 @@ text-align: left;
 cursor: pointer;
 
 transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+transform 0.2s ease,
+box-shadow 0.2s ease;
 
 display: flex;
 
 flex-direction: column;
 
 align-items: flex-start;
-
-
 }
 
-.action-card:hover {
+.action-card {
 transform: translateY(-3px);
 
-
 box-shadow:
-    0 8px 20px
-    rgba(0, 0, 0, 0.08);
-
-
+0 8px 20px
+rgba(0, 0, 0, 0.08);
 }
 
 .action-icon {
@@ -276,23 +247,17 @@ margin-bottom: 15px;
 font-size: 16px;
 font-weight: 700;
 
-
 color: #111;
 
 margin-bottom: 7px;
-
-
 }
 
 .action-description {
 color: #777;
 
-
 font-size: 13px;
 
 line-height: 1.5;
-
-
 }
 
 /* ========================================
@@ -302,19 +267,15 @@ PAYMENTS SECTION
 .payments-section {
 background: #fff;
 
-
 border: 1px solid #e5e5e5;
 
 border-radius: 12px;
 
 overflow: hidden;
-
-
 }
 
 .section-heading {
 padding: 25px;
-
 
 display: flex;
 
@@ -323,8 +284,6 @@ align-items: center;
 justify-content: space-between;
 
 border-bottom: 1px solid #e5e5e5;
-
-
 }
 
 .section-heading h2 {
@@ -340,7 +299,6 @@ font-size: 14px;
 #viewAllPaymentsBtn {
 border: 1px solid #ddd;
 
-
 background: #fff;
 
 color: #222;
@@ -352,17 +310,14 @@ border-radius: 6px;
 cursor: pointer;
 
 font-size: 14px;
-
 }
 
-#viewAllPaymentsBtn:hover {
+#viewAllPaymentsBtn {
 background: #111;
-
 
 color: #fff;
 
 border-color: #111;
-
 }
 
 /* ========================================
@@ -377,11 +332,9 @@ overflow-x: auto;
 table {
 width: 100%;
 
-
 border-collapse: collapse;
 
 min-width: 700px;
-
 }
 
 thead {
@@ -390,7 +343,6 @@ background: #fafafa;
 
 th {
 text-align: left;
-
 
 padding: 16px 20px;
 
@@ -401,7 +353,6 @@ font-weight: 700;
 color: #555;
 
 border-bottom: 1px solid #e5e5e5;
-
 }
 
 td {
@@ -410,15 +361,13 @@ padding: 17px 20px;
 font-size: 14px;
 
 border-bottom: 1px solid #eeeeee;
-
-
 }
 
-tbody tr:last-child td {
+tbody tr td {
 border-bottom: none;
 }
 
-tbody tr:hover {
+tbody tr {
 background: #fafafa;
 }
 
@@ -436,8 +385,6 @@ border-radius: 20px;
 font-size: 12px;
 
 font-weight: 600;
-
-
 }
 
 .status.paid {
@@ -470,7 +417,6 @@ text-align: center;
 color: #888;
 
 padding: 40px 20px;
-
 }
 
 /* ========================================
@@ -478,18 +424,15 @@ TABLET
 ======================================== */
 
 @media (max-width: 1000px) {
-
-
 .summary-grid {
-    grid-template-columns:
-        repeat(2, 1fr);
+grid-template-columns:
+repeat(2, 1fr);
 }
 
 .actions-grid {
-    grid-template-columns:
-        repeat(2, 1fr);
+grid-template-columns:
+repeat(2, 1fr);
 }
-
 }
 
 /* ========================================
@@ -497,614 +440,59 @@ MOBILE
 ======================================== */
 
 @media (max-width: 650px) {
-
 .admin-header {
-    height: auto;
+height: auto;
 
-    min-height: 65px;
+min-height: 65px;
 
-    padding: 15px 20px;
+padding: 15px 20px;
+
 }
 
 .brand {
-    font-size: 20px;
+font-size: 20px;
 }
 
 .header-right {
-    gap: 10px;
+gap: 10px;
 }
 
 #adminName {
-    display: none;
+display: none;
 }
 
 .dashboard {
-    padding: 25px 15px;
+padding: 25px 15px;
 }
 
 .dashboard-heading h1 {
-    font-size: 27px;
+font-size: 27px;
 }
 
 .summary-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
+grid-template-columns: 1fr;
+gap: 15px;
 }
 
 .actions-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
+grid-template-columns: 1fr;
+gap: 15px;
 }
 
 .summary-card {
-    padding: 20px;
+padding: 20px;
 }
 
 .section-heading {
-    align-items: flex-start;
-
-    gap: 15px;
-
-    flex-direction: column;
-}
-
-#viewAllPaymentsBtn {
-    width: 100%;
-}
-
-=======
-/* ========================================
-RESET
-======================================== */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  }
-
-/* ========================================
-BODY
-======================================== */
-
-body {
-font-family: Arial, Helvetica, sans-serif;
-background: #f5f5f5;
-color: #222;
-min-height: 100vh;
-}
-
-/* ========================================
-ADMIN HEADER
-======================================== */
-
-.admin-header {
-width: 100%;
-height: 70px;
-background: #111;
-color: #fff;
-
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-padding: 0 40px;
-
-
-}
-
-.brand {
-font-size: 25px;
-font-weight: 800;
-letter-spacing: 2px;
-}
-
-.header-right {
-display: flex;
-align-items: center;
-gap: 20px;
-}
-
-#adminName {
-font-size: 14px;
-color: #ddd;
-}
-
-#logoutBtn {
-border: 1px solid #555;
-background: transparent;
-color: #fff;
-
-
-padding: 9px 16px;
-
-border-radius: 6px;
-
-cursor: pointer;
-
-font-size: 14px;
-
-}
-
-#logoutBtn:hover {
-background: #fff;
-color: #111;
-}
-
-/* ========================================
-MAIN DASHBOARD
-======================================== */
-
-.dashboard {
-width: 100%;
-max-width: 1400px;
-
-margin: 0 auto;
-
-padding: 40px;
-
-
-}
-
-/* ========================================
-DASHBOARD HEADING
-======================================== */
-
-.dashboard-heading {
-margin-bottom: 30px;
-}
-
-.dashboard-heading h1 {
-font-size: 32px;
-margin-bottom: 8px;
-}
-
-.dashboard-heading p {
-color: #777;
-font-size: 15px;
-}
-
-/* ========================================
-SUMMARY CARDS
-======================================== */
-
-.summary-grid {
-display: grid;
-
-
-grid-template-columns:
-    repeat(4, 1fr);
-
-gap: 20px;
-
-margin-bottom: 40px;
-
-
-}
-
-.summary-card {
-background: #fff;
-
-
-border: 1px solid #e5e5e5;
-
-border-radius: 12px;
-
-padding: 25px;
-
-display: flex;
-align-items: center;
-
-gap: 18px;
-
-box-shadow:
-    0 3px 12px
-    rgba(0, 0, 0, 0.04);
-
-
-}
-
-.card-icon {
-width: 55px;
-height: 55px;
-
-
-border-radius: 10px;
-
-background: #f2f2f2;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-font-size: 25px;
-
-flex-shrink: 0;
-
-
-}
-
-.card-content {
-display: flex;
-flex-direction: column;
-
-
-gap: 6px;
-
-
-}
-
-.card-content span {
-font-size: 13px;
-color: #777;
-}
-
-.card-content strong {
-font-size: 23px;
-color: #111;
-}
-
-/* ========================================
-SECTION TITLES
-======================================== */
-
-.section-title {
-margin-bottom: 18px;
-}
-
-.section-title h2 {
-font-size: 21px;
-margin-bottom: 5px;
-}
-
-.section-title p {
-color: #777;
-font-size: 14px;
-}
-
-/* ========================================
-QUICK ACTIONS
-======================================== */
-
-.actions-section {
-margin-bottom: 40px;
-}
-
-.actions-grid {
-display: grid;
-
-
-grid-template-columns:
-    repeat(4, 1fr);
-
-gap: 20px;
-
-
-}
-
-.action-card {
-border: 1px solid #e3e3e3;
-
-
-background: #fff;
-
-border-radius: 12px;
-
-padding: 25px;
-
-text-align: left;
-
-cursor: pointer;
-
-transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-
-display: flex;
-
-flex-direction: column;
-
 align-items: flex-start;
 
+gap: 15px;
 
-}
+flex-direction: column;
 
-.action-card:hover {
-transform: translateY(-3px);
-
-
-box-shadow:
-    0 8px 20px
-    rgba(0, 0, 0, 0.08);
-
-
-}
-
-.action-icon {
-font-size: 28px;
-margin-bottom: 15px;
-}
-
-.action-title {
-font-size: 16px;
-font-weight: 700;
-
-
-color: #111;
-
-margin-bottom: 7px;
-
-
-}
-
-.action-description {
-color: #777;
-
-
-font-size: 13px;
-
-line-height: 1.5;
-
-
-}
-
-/* ========================================
-PAYMENTS SECTION
-======================================== */
-
-.payments-section {
-background: #fff;
-
-
-border: 1px solid #e5e5e5;
-
-border-radius: 12px;
-
-overflow: hidden;
-
-
-}
-
-.section-heading {
-padding: 25px;
-
-
-display: flex;
-
-align-items: center;
-
-justify-content: space-between;
-
-border-bottom: 1px solid #e5e5e5;
-
-
-}
-
-.section-heading h2 {
-font-size: 21px;
-margin-bottom: 5px;
-}
-
-.section-heading p {
-color: #777;
-font-size: 14px;
 }
 
 #viewAllPaymentsBtn {
-border: 1px solid #ddd;
-
-
-background: #fff;
-
-color: #222;
-
-padding: 10px 17px;
-
-border-radius: 6px;
-
-cursor: pointer;
-
-font-size: 14px;
-
-}
-
-#viewAllPaymentsBtn:hover {
-background: #111;
-
-
-color: #fff;
-
-border-color: #111;
-
-}
-
-/* ========================================
-TABLE
-======================================== */
-
-.table-container {
 width: 100%;
-overflow-x: auto;
 }
-
-table {
-width: 100%;
-
-
-border-collapse: collapse;
-
-min-width: 700px;
-
-}
-
-thead {
-background: #fafafa;
-}
-
-th {
-text-align: left;
-
-
-padding: 16px 20px;
-
-font-size: 13px;
-
-font-weight: 700;
-
-color: #555;
-
-border-bottom: 1px solid #e5e5e5;
-
-}
-
-td {
-padding: 17px 20px;
-
-font-size: 14px;
-
-border-bottom: 1px solid #eeeeee;
-
-
-}
-
-tbody tr:last-child td {
-border-bottom: none;
-}
-
-tbody tr:hover {
-background: #fafafa;
-}
-
-/* ========================================
-PAYMENT STATUS
-======================================== */
-
-.status {
-display: inline-block;
-
-padding: 5px 10px;
-
-border-radius: 20px;
-
-font-size: 12px;
-
-font-weight: 600;
-
-
-}
-
-.status.paid {
-background: #e8f5e9;
-color: #2e7d32;
-}
-
-.status.pending {
-background: #fff8e1;
-color: #f57f17;
-}
-
-.status.failed {
-background: #ffebee;
-color: #c62828;
-}
-
-.status.cancelled {
-background: #eeeeee;
-color: #616161;
-}
-
-/* ========================================
-EMPTY STATE
-======================================== */
-
-.empty-state {
-text-align: center;
-
-color: #888;
-
-padding: 40px 20px;
-
-}
-
-/* ========================================
-TABLET
-======================================== */
-
-@media (max-width: 1000px) {
-
-
-.summary-grid {
-    grid-template-columns:
-        repeat(2, 1fr);
-}
-
-.actions-grid {
-    grid-template-columns:
-        repeat(2, 1fr);
-}
-
-}
-
-/* ========================================
-MOBILE
-======================================== */
-
-@media (max-width: 650px) {
-
-.admin-header {
-    height: auto;
-
-    min-height: 65px;
-
-    padding: 15px 20px;
-}
-
-.brand {
-    font-size: 20px;
-}
-
-.header-right {
-    gap: 10px;
-}
-
-#adminName {
-    display: none;
-}
-
-.dashboard {
-    padding: 25px 15px;
-}
-
-.dashboard-heading h1 {
-    font-size: 27px;
-}
-
-.summary-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-.actions-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-.summary-card {
-    padding: 20px;
-}
-
-.section-heading {
-    align-items: flex-start;
-
-    gap: 15px;
-
-    flex-direction: column;
-}
-
-#viewAllPaymentsBtn {
-    width: 100%;
-}
-
->>>>>>> 55e619a2b3c688d863890bd1300bb1649e96c925
 }

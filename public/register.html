@@ -1,534 +1,253 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
+<head> <meta charset="UTF-8">
 
-    <meta charset="UTF-8">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account - Pan Art</title>
 
-    <title>Create Account - Pan Art</title>
-
-    <link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/register.css">
 
 </head>
 
-
 <body>
 
+<!-- ========================================
+     REGISTER PAGE
+========================================= -->
 
-    <!-- ========================================
-         REGISTER PAGE
-    ========================================= -->
+<main class="register-page">
 
-    <main class="register-page">
+    <!-- BRAND -->
+
+    <div class="brand">
+
+        <a href="index.html">
+            PAN ART
+        </a>
+
+    </div>
 
 
-        <!-- BRAND -->
+    <!-- REGISTER CARD -->
 
-        <div class="brand">
+    <div class="register-card">
 
-            <a href="index.html">
-                PAN ART
-            </a>
+        <div class="register-heading">
+
+            <h1>
+                Create Your Account
+            </h1>
+
+            <p>
+                Join Pan Art and discover beautiful artwork.
+            </p>
 
         </div>
 
 
+        <!-- REGISTER FORM -->
 
-        <!-- REGISTER CARD -->
+        <form id="registerForm">
 
-        <div class="register-card">
+            <!-- FULL NAME -->
 
+            <div class="form-group">
 
-            <div class="register-heading">
+                <label for="fullName">
+                    Full Name
+                </label>
 
-                <h1>
-                    Create Your Account
-                </h1>
-
-                <p>
-                    Join Pan Art and discover beautiful artwork.
-                </p>
-
-            </div>
-
-
-
-            <!-- REGISTER FORM -->
-
-            <form id="registerForm">
-
-
-                <!-- FULL NAME -->
-
-                <div class="form-group">
-
-                    <label for="fullName">
-                        Full Name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        placeholder="Enter your full name"
-                        autocomplete="name"
-                        required
-                    >
-
-                </div>
-
-
-
-                <!-- EMAIL -->
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                        autocomplete="email"
-                        required
-                    >
-
-                </div>
-
-
-
-                <!-- PHONE -->
-
-                <div class="form-group">
-
-                    <label for="phone">
-                        Phone Number
-                    </label>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Enter your phone number"
-                        autocomplete="tel"
-                        required
-                    >
-
-                </div>
-
-
-
-                <!-- PASSWORD -->
-
-                <div class="form-group">
-
-                    <label for="password">
-                        Password
-                    </label>
-
-                    <div class="password-field">
-
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Create a password"
-                            autocomplete="new-password"
-                            required
-                        >
-
-                        <button
-                            type="button"
-                            id="togglePassword"
-                            class="password-toggle"
-                        >
-                            Show
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- CONFIRM PASSWORD -->
-
-                <div class="form-group">
-
-                    <label for="confirmPassword">
-                        Confirm Password
-                    </label>
-
-                    <div class="password-field">
-
-                        <input
-                            type="password"
-                            id="confirmPassword"
-                            name="confirmPassword"
-                            placeholder="Confirm your password"
-                            autocomplete="new-password"
-                            required
-                        >
-
-                        <button
-                            type="button"
-                            id="toggleConfirmPassword"
-                            class="password-toggle"
-                        >
-                            Show
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- TERMS -->
-
-                <div class="terms">
-
-                    <input
-                        type="checkbox"
-                        id="terms"
-                        name="terms"
-                        required
-                    >
-
-                    <label for="terms">
-
-                        I agree to Pan Art's
-                        <a href="#">
-                            Terms and Conditions
-                        </a>
-
-                    </label>
-
-                </div>
-
-
-
-                <!-- MESSAGE -->
-
-                <div
-                    id="message"
-                    class="message"
-                    role="alert"
-                ></div>
-
-
-
-                <!-- SUBMIT -->
-
-                <button
-                    type="submit"
-                    id="registerButton"
-                    class="register-button"
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
                 >
-                    Create Account
-                </button>
-
-
-            </form>
-
-
-
-            <!-- LOGIN -->
-
-            <div class="login-text">
-
-                <p>
-                    Already have an account?
-                    <a href="login.html">
-                        Login
-                    </a>
-                </p>
 
             </div>
 
 
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <div class="password-field">
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="password-toggle"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <div class="password-field">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="toggleConfirmPassword"
+                        class="password-toggle"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TERMS -->
+
+            <div class="terms">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                >
+
+                <label for="terms">
+
+                    I agree to Pan Art's
+
+                    <a href="#">
+                        Terms and Conditions
+                    </a>
+
+                </label>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="message"
+                class="message"
+                role="alert"
+            ></div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                id="registerButton"
+                class="register-button"
+            >
+                Create Account
+            </button>
+
+        </form>
+
+
+        <!-- LOGIN -->
+
+        <div class="login-text">
+
+            <p>
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
         </div>
 
+    </div>
 
-    </main>
+</main>
 
 
-
-    <script src="js/register.js"></script>
+<script src="js/register.js"></script>
 
 </body>
 
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Create Account - Pan Art</title>
-
-    <link rel="stylesheet" href="css/register.css">
-
-</head>
-
-
-<body>
-
-
-    <!-- ========================================
-         REGISTER PAGE
-    ========================================= -->
-
-    <main class="register-page">
-
-
-        <!-- BRAND -->
-
-        <div class="brand">
-
-            <a href="index.html">
-                PAN ART
-            </a>
-
-        </div>
-
-
-
-        <!-- REGISTER CARD -->
-
-        <div class="register-card">
-
-
-            <div class="register-heading">
-
-                <h1>
-                    Create Your Account
-                </h1>
-
-                <p>
-                    Join Pan Art and discover beautiful artwork.
-                </p>
-
-            </div>
-
-
-
-            <!-- REGISTER FORM -->
-
-            <form id="registerForm">
-
-
-                <!-- FULL NAME -->
-
-                <div class="form-group">
-
-                    <label for="fullName">
-                        Full Name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        placeholder="Enter your full name"
-                        autocomplete="name"
-                        required
-                    >
-
-                </div>
-
-
-
-                <!-- EMAIL -->
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                        autocomplete="email"
-                        required
-                    >
-
-                </div>
-
-
-
-                <!-- PHONE -->
-
-                <div class="form-group">
-
-                    <label for="phone">
-                        Phone Number
-                    </label>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Enter your phone number"
-                        autocomplete="tel"
-                        required
-                    >
-
-                </div>
-
-
-
-                <!-- PASSWORD -->
-
-                <div class="form-group">
-
-                    <label for="password">
-                        Password
-                    </label>
-
-                    <div class="password-field">
-
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Create a password"
-                            autocomplete="new-password"
-                            required
-                        >
-
-                        <button
-                            type="button"
-                            id="togglePassword"
-                            class="password-toggle"
-                        >
-                            Show
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- CONFIRM PASSWORD -->
-
-                <div class="form-group">
-
-                    <label for="confirmPassword">
-                        Confirm Password
-                    </label>
-
-                    <div class="password-field">
-
-                        <input
-                            type="password"
-                            id="confirmPassword"
-                            name="confirmPassword"
-                            placeholder="Confirm your password"
-                            autocomplete="new-password"
-                            required
-                        >
-
-                        <button
-                            type="button"
-                            id="toggleConfirmPassword"
-                            class="password-toggle"
-                        >
-                            Show
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- TERMS -->
-
-                <div class="terms">
-
-                    <input
-                        type="checkbox"
-                        id="terms"
-                        name="terms"
-                        required
-                    >
-
-                    <label for="terms">
-
-                        I agree to Pan Art's
-                        <a href="#">
-                            Terms and Conditions
-                        </a>
-
-                    </label>
-
-                </div>
-
-
-
-                <!-- MESSAGE -->
-
-                <div
-                    id="message"
-                    class="message"
-                    role="alert"
-                ></div>
-
-
-
-                <!-- SUBMIT -->
-
-                <button
-                    type="submit"
-                    id="registerButton"
-                    class="register-button"
-                >
-                    Create Account
-                </button>
-
-
-            </form>
-
-
-
-            <!-- LOGIN -->
-
-            <div class="login-text">
-
-                <p>
-                    Already have an account?
-                    <a href="login.html">
-                        Login
-                    </a>
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-    </main>
-
-
-
-    <script src="js/register.js"></script>
-
-</body>
-
->>>>>>> 55e619a2b3c688d863890bd1300bb1649e96c925
 </html>

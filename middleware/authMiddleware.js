@@ -1,150 +1,76 @@
-<<<<<<< HEAD
 const User = require("../models/User");
 
 async function requireLogin(req, res, next) {
-    try {
+try {
 
-        // ========================================
-        // CHECK SESSION
-        // ========================================
+    // ========================================
+    // CHECK SESSION
+    // ========================================
 
-        if (!req.session.userId) {
+    if (!req.session.userId) {
 
-            // Browser requesting an HTML page
-            if (req.accepts("html")) {
-                return res.redirect("/login.html");
-            }
-
-            // API request
-            return res.status(401).json({
-                success: false,
-                message: "Please login to continue."
-            });
+        // Browser requesting an HTML page
+        if (req.accepts("html")) {
+            return res.redirect("/login.html");
         }
 
-
-        // ========================================
-        // FIND USER
-        // ========================================
-
-        const user = await User.findById(req.session.userId)
-            .select("-password");
-
-        // ========================================
-        // INVALID SESSION
-        // ========================================
-
-        if (!user) {
-
-            req.session.destroy(() => {});
-
-            if (req.accepts("html")) {
-                return res.redirect("/login.html");
-            }
-
-            return res.status(401).json({
-                success: false,
-                message: "Your session is no longer valid."
-            });
-        }
+        // API request
+        return res.status(401).json({
+            success: false,
+            message: "Please login to continue."
+        });
+    }
 
 
-        // ========================================
-        // AUTHENTICATED USER
-        // ========================================
+    // ========================================
+    // FIND USER
+    // ========================================
 
-        req.user = user;
+    const user = await User.findById(req.session.userId)
+        .select("-password");
 
-        next();
 
-    } catch (error) {
+    // ========================================
+    // INVALID SESSION
+    // ========================================
 
-        console.error("Authentication error:", error);
+    if (!user) {
+
+        req.session.destroy(() => {});
 
         if (req.accepts("html")) {
             return res.redirect("/login.html");
         }
 
-        return res.status(500).json({
+        return res.status(401).json({
             success: false,
-            message: "Authentication failed."
+            message: "Your session is no longer valid."
         });
     }
-}
-
-=======
-const User = require("../models/User");
-
-async function requireLogin(req, res, next) {
-    try {
-
-        // ========================================
-        // CHECK SESSION
-        // ========================================
-
-        if (!req.session.userId) {
-
-            // Browser requesting an HTML page
-            if (req.accepts("html")) {
-                return res.redirect("/login.html");
-            }
-
-            // API request
-            return res.status(401).json({
-                success: false,
-                message: "Please login to continue."
-            });
-        }
 
 
-        // ========================================
-        // FIND USER
-        // ========================================
+    // ========================================
+    // AUTHENTICATED USER
+    // ========================================
 
-        const user = await User.findById(req.session.userId)
-            .select("-password");
+    req.user = user;
 
-        // ========================================
-        // INVALID SESSION
-        // ========================================
+    next();
 
-        if (!user) {
+} catch (error) {
 
-            req.session.destroy(() => {});
+    console.error("Authentication error:", error);
 
-            if (req.accepts("html")) {
-                return res.redirect("/login.html");
-            }
-
-            return res.status(401).json({
-                success: false,
-                message: "Your session is no longer valid."
-            });
-        }
-
-
-        // ========================================
-        // AUTHENTICATED USER
-        // ========================================
-
-        req.user = user;
-
-        next();
-
-    } catch (error) {
-
-        console.error("Authentication error:", error);
-
-        if (req.accepts("html")) {
-            return res.redirect("/login.html");
-        }
-
-        return res.status(500).json({
-            success: false,
-            message: "Authentication failed."
-        });
+    if (req.accepts("html")) {
+        return res.redirect("/login.html");
     }
+
+    return res.status(500).json({
+        success: false,
+        message: "Authentication failed."
+    });
 }
 
->>>>>>> 55e619a2b3c688d863890bd1300bb1649e96c925
+}
+
 module.exports = requireLogin;
