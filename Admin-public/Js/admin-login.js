@@ -1,5 +1,3 @@
-Corrected admin-login.js
-
 const loginForm =
 document.getElementById("adminLoginForm");
 
